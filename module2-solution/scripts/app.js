@@ -51,8 +51,7 @@
         };
         boughtList.push(item);
         toBuyList.splice(itemIndex, 1);
-      },
-      message : "Nothing bought yet.";
+      }
     };
 
     //bought service
