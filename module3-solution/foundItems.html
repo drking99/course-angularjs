@@ -1,0 +1,8 @@
+<div class="list">
+  <ul>
+    <li ng-repeat="item in menu.found">{{item.id + ' ,' + item.short_name + ' ,' + item.name}}
+      <button ng-click="menu.onRemove($index);">Don't want this one!</button>
+    </li>
+  </ul>
+</div>
+<div class="error" ng-show="menu.found.length == 0">{{'    '+ menu.msg}}</div>
