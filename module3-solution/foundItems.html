@@ -1,6 +1,6 @@
 <div class="list">
   <ul>
-    <li ng-repeat="item in menu.found">{{item.id + ' ,' + item.short_name + ' ,' + item.name}}
+    <li ng-repeat="item in menu.found">{{item.name + ' , ' + item.short_name + ' , ' + item.description}}
       <button ng-click="menu.onRemove($index);">Don't want this one!</button>
     </li>
   </ul>
