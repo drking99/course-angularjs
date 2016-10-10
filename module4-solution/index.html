@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app='MenuApp'>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title></title>
+  </head>
+  <body>
+    <!-- <h1>Welome to menu app index page</h1>
+    <button ui-sref="home">Home</button>
+    <button ui-sref="categories">Categories</button> -->
+    <ui-view></ui-view>
+    <spinner-component></spinner-component>
+    <!-- libraries -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- modules -->
+    <script src="src/modules/menuapp.module.js"></script>
+    <script src="src/modules/data.module.js"></script>
+    <script src="src/modules/spinner.module.js"></script>
+
+    <!-- routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- module artifacts -->
+    <!-- components -->
+    <script src="src/components/categories.component.js"></script>
+    <script src="src/components/items.component.js"></script>
+    <script src="src/components/spinner.component.js"></script>
+
+    <!-- controller -->
+    <script src="src/controllers/main-categories.controller.js"></script>
+    <script src="src/controllers/main-items.controller.js"></script>
+    <script src="src/controllers/spinner.controller.js"></script>
+
+    <!-- services -->
+    <script src="src/services/menudata.service.js"></script>
+  </body>
+</html>

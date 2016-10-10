@@ -1,0 +1,12 @@
+<div>Pre Defined SHopping List</div>
+<div>
+  <input id="itemName" ng-model="slCtrl.name"></input>
+  <input id="itemQuantity" ng-model="slCtrl.quantity"></input>
+  <button ng-click="slCtrl.addItems();">Add Item</button>
+
+  <ol>
+    <li ng-repeat="item in slCtrl.items">
+      {{item.quantity}} of {{item.name}}
+    </li>
+  </ol>
+</div>
